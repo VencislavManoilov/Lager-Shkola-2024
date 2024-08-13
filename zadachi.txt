@@ -1,0 +1,28 @@
+Mashinki
+
+randomInteger(10) -> 0 / 9
+
+Pishtov:
+let slots = [0, 0, 0];
+let kartinki = [box, gem[0], gem[1], gem[2], ...];
+// Tova e v draw:
+for(let i = 0; i < slots.length; i++) {
+    drawImage(kartinki[slots[i]], ...);
+}
+
+zadachi:
+1. Копирайте code.zip
+2. Napravete 3 poleta s boxove
+3. Kogato se natisne space da dava sluchaini
+4. Napravete balans ot 10lv v nachaloto i 10st zalog
+5. Sistema na machinkite:
+    3 * gem[0] -> x20
+    3 * gem[1] -> x10
+    3 * gem[2] -> x5
+    3 * gem[3] -> x2
+    3 * gem[4] -> x1
+    3 * gem[5] -> x0.5
+    3 * gem[6] -> x0.2
+6.Napravete butonche koeto da se natiska vmesto space
+7. Napravete da se murdat predi da se pokaje rezultata
+8.
