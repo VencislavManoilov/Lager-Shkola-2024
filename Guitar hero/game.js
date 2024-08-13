@@ -3,8 +3,18 @@ let noteX = 800, noteY = 0,boxX=0,boxY=300;
 function update() {
     noteX = noteX - 3;
 
-    if(noteX<0){
+    if(noteX<30){
         noteX=800;
+
+        if(noteY == boxY) {
+            console.log("bravo, pechelish boi s japanka");
+
+            if(noteY == 0) {
+                noteY = 300;
+            } else {
+                noteY = 0;
+            }
+        }
     }
 
     if(mouseY <= 300) {
@@ -30,6 +40,6 @@ function keyup(key) {
 }
 
 function mouseup() {
-boxY=0;
+    boxY=0;
     console.log("Mouse clicked at", mouseX, mouseY);
 }
