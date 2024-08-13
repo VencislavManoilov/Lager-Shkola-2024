@@ -2,14 +2,14 @@
 let myX, myY, vragX = 750, vragY = 300;
 function init() {
     // Kodut tuk se izpulnqva vednuj v nachaloto
-    myX = 100;
+    myX = 300;
     myY = 100;
 }
 function update() {
     // Kodut tuk se izpulnqva (okolo) 100 puti v sekunda
     myY = myY + 3;
 
-    vragX = vragX - 3;
+    vragX = vragX - 5;
 }
 function draw() {
     // Tuk naprogramirai kakvo da se risuva
@@ -18,7 +18,7 @@ function draw() {
     drawImage(dogRun[3], vragX, vragY, 50, 50);
 }
 function mouseup() {
-    vragX = 750;
+    
 }
 function keyup(key) {
     // Pechatai koda na natisnatiq klavish
