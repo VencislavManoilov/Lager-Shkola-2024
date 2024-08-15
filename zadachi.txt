@@ -1,13 +1,18 @@
 Mashinki
 
-randomInteger(10) -> 0 / 9
-
 Pishtov:
 let slots = [0, 0, 0];
 let kartinki = [box, gem[0], gem[1], gem[2], ...];
 // Tova e v draw:
 for(let i = 0; i < slots.length; i++) {
     drawImage(kartinki[slots[i]], ...);
+}
+// Kogato se padnat ednakvi
+switch(slots[0]) {
+    case 0:
+        money += bet * 20;
+        break;
+    ...
 }
 
 zadachi:
@@ -16,13 +21,52 @@ zadachi:
 3. Kogato se natisne space da dava sluchaini
 4. Napravete balans ot 10lv v nachaloto i 10st zalog
 5. Sistema na machinkite:
-    3 * gem[0] -> x20
-    3 * gem[1] -> x10
-    3 * gem[2] -> x5
-    3 * gem[3] -> x2
-    3 * gem[4] -> x1
-    3 * gem[5] -> x0.5
-    3 * gem[6] -> x0.2
-6.Napravete butonche koeto da se natiska vmesto space
-7. Napravete da se murdat predi da se pokaje rezultata
-8.
+    3 * gem[0] -> x150 | 2 * gem[0] -> x4   
+    3 * gem[1] -> x75  | 2 * gem[1] -> x2      
+    3 * gem[2] -> x25  | 2 * gem[2] -> x1       
+    3 * gem[3] -> x5   | 2 * gem[3] -> x0.5
+    3 * gem[4] -> x2   | 2 * gem[4] -> x0.2
+    3 * gem[5] -> x0.5 | 2 * gem[5] -> x0
+    3 * gem[6] -> x0.2 | 2 * gem[6] -> x0
+
+        *wildcard moje da zamesti ot gem[6] do gem[3] vkliuchitelno
+         puska se samo vuv vtora i treta liniq
+        2 wildcarda i edin gem sushto raboti
+        
+6. Dobavete butonche koeto da se natiska
+7**. Napravete da se murdat predi da se pokaje rezultata
+8. Da se pokazva poslednata pechalba
+9. Naj-golqma pechalba
+10. Ako nqma pari za zalog gonish ot kazinoto
+11. 10% ot opitite da sa pechalba:
+randomInteger(10) -> ako e 0 da sa ednakvi
+* - dopylnitelno
+** - s povishena trudnost!!!
+
+
+
+
+
+
+
+
+GAME JAM!!! - За 15.08
+
+1. Какво е Game Jam?
+    Game jam е събитие, в което участниците създават игри
+    за кратко време, обикновено 48 часа. Работят в екипи,
+    измислят идеи и разработват игри от начало до край.
+
+2. ВАЖНО!!!
+АКО ИМАТЕ ВЪПРОСИ МЕ ПИТАТЕ!!!
+
+3. ПОБЕДИТЕЯ ПЕЧЕЛИ БИСКВИТИ БЕЛВИТА И КАПИ СОКЧЕ
+
+4. Идеи:
+    - Paint
+    - Поцалка
+    - Платформена игра – Супер Марио
+    - Пъзел – свързваш блокчета или решаваш загадки
+    - Лабиринт – намери изхода от мазето на Яшо
+    - Гонки с коли
+    - Cookie Clicker
